@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6862EE6A1E702E6C00F41758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6862EE691E702E6C00F41758 /* main.m */; };
+		6862EE6A1E702E6C00F41758 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6862EE691E702E6C00F41758 /* main.mm */; };
 		6862EE6D1E702E6C00F41758 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6862EE6C1E702E6C00F41758 /* AppDelegate.m */; };
 		6862EE701E702E6C00F41758 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6862EE6F1E702E6C00F41758 /* ViewController.m */; };
 		6862EE731E702E6C00F41758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6862EE711E702E6C00F41758 /* Main.storyboard */; };
 		6862EE751E702E6C00F41758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6862EE741E702E6C00F41758 /* Assets.xcassets */; };
 		6862EE781E702E6C00F41758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6862EE761E702E6C00F41758 /* LaunchScreen.storyboard */; };
+		6862EE821E702FA400F41758 /* libhelloworld_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6862EE811E702FA400F41758 /* libhelloworld_objc.a */; };
+		6862EE841E702FA900F41758 /* libdjinni_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6862EE831E702FA900F41758 /* libdjinni_objc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6862EE651E702E6C00F41758 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6862EE691E702E6C00F41758 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6862EE691E702E6C00F41758 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		6862EE6B1E702E6C00F41758 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6862EE6C1E702E6C00F41758 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6862EE6E1E702E6C00F41758 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6862EE741E702E6C00F41758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6862EE771E702E6C00F41758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6862EE791E702E6C00F41758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6862EE811E702FA400F41758 /* libhelloworld_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhelloworld_objc.a; path = "../../build/Debug-iphoneos/libhelloworld_objc.a"; sourceTree = "<group>"; };
+		6862EE831E702FA900F41758 /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../deps/djinni/support-lib/build/Debug-iphoneos/libdjinni_objc.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6862EE841E702FA900F41758 /* libdjinni_objc.a in Frameworks */,
+				6862EE821E702FA400F41758 /* libhelloworld_objc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				6862EE671E702E6C00F41758 /* HelloWorld */,
 				6862EE661E702E6C00F41758 /* Products */,
+				6862EE801E702FA400F41758 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +81,18 @@
 		6862EE681E702E6C00F41758 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6862EE691E702E6C00F41758 /* main.m */,
+				6862EE691E702E6C00F41758 /* main.mm */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6862EE801E702FA400F41758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6862EE831E702FA900F41758 /* libdjinni_objc.a */,
+				6862EE811E702FA400F41758 /* libhelloworld_objc.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +168,7 @@
 			files = (
 				6862EE701E702E6C00F41758 /* ViewController.m in Sources */,
 				6862EE6D1E702E6C00F41758 /* AppDelegate.m in Sources */,
-				6862EE6A1E702E6C00F41758 /* main.m in Sources */,
+				6862EE6A1E702E6C00F41758 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cortex.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../deps/djinni/support-lib/objc\n$(SRCROOT)/../../generated-src/objc $(SRCROOT)/../../generated-src/objc";
 			};
 			name = Debug;
 		};
@@ -285,6 +302,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cortex.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../deps/djinni/support-lib/objc\n$(SRCROOT)/../../generated-src/objc $(SRCROOT)/../../generated-src/objc";
 			};
 			name = Release;
 		};
