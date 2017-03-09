@@ -22,12 +22,19 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1756D3A4F43C547854145165 /* hello_world_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70C455387B6026A8A84DD02D /* hello_world_impl.cpp */; };
+		23F5BBE6FFACB05803E41B02 /* HWHandshakeResultRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = 461B31B9A7B8D1E8EA5E9199 /* HWHandshakeResultRecord.mm */; };
+		2B0C23E3CF19831C3670CC2B /* NativeHelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 807B3C32F2CD2DD6B0E49846 /* NativeHelloWorld.cpp */; };
 		39BF9C027804C5964F141DDF /* libdjinni_jni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A90FE96571004152C0D23D70 /* libdjinni_jni.a */; };
 		45FFCA28BDEEE6567A8B90CC /* djinni_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13B25165D8F4AF2C6CEA4FDD /* djinni_main.cpp */; };
-		7C2B88DDF89C4D63316C7907 /* HWHelloWorld+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93EF3C6F21A261CD73E92BF3 /* HWHelloWorld+Private.mm */; };
-		D6690478B01D529DF7A3F654 /* hello_world_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70C455387B6026A8A84DD02D /* hello_world_impl.cpp */; };
-		E1A6CB1197B9B21717092AC2 /* NativeHelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 807B3C32F2CD2DD6B0E49846 /* NativeHelloWorld.cpp */; };
-		E1B168C043D391C8B932D4E1 /* hello_world_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70C455387B6026A8A84DD02D /* hello_world_impl.cpp */; };
+		8F1C5FDCB832EDB0569287E5 /* api_handshake_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18977E16908ED9505755AC4F /* api_handshake_impl.cpp */; };
+		A2928C1253F857B0497D213A /* api_handshake_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18977E16908ED9505755AC4F /* api_handshake_impl.cpp */; };
+		A7771D6690D091DCE11F09B1 /* NativeApiHandshake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0272945CDAC1122F03365B7E /* NativeApiHandshake.cpp */; };
+		B721D6DD0A40B24C81160C95 /* HWHandshakeResultRecord+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70F15AD602BE36C1AE2B5476 /* HWHandshakeResultRecord+Private.mm */; };
+		B9CD2045E43C19E67DE2D94C /* HWApiHandshake+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A8195EB1F2A4E46984AC013 /* HWApiHandshake+Private.mm */; };
+		BA6FFF2D7863C3105D65B43F /* hello_world_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70C455387B6026A8A84DD02D /* hello_world_impl.cpp */; };
+		BFADDCE2F1E579B4C80DBC4F /* NativeHandshakeResultRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E8DD084CB06D2BEB617B53 /* NativeHandshakeResultRecord.cpp */; };
+		F86D243AECD03C281D113BB3 /* HWHelloWorld+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93EF3C6F21A261CD73E92BF3 /* HWHelloWorld+Private.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +83,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0272945CDAC1122F03365B7E /* NativeApiHandshake.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeApiHandshake.cpp; sourceTree = "<group>"; };
 		0467E5039F6B955D767C8C5E /* libhelloworld.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = libhelloworld.gyp; sourceTree = "<group>"; };
 		13B25165D8F4AF2C6CEA4FDD /* djinni_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = djinni_main.cpp; sourceTree = "<group>"; };
+		18977E16908ED9505755AC4F /* api_handshake_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = api_handshake_impl.cpp; sourceTree = "<group>"; };
+		37E8DD084CB06D2BEB617B53 /* NativeHandshakeResultRecord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeHandshakeResultRecord.cpp; sourceTree = "<group>"; };
+		461B31B9A7B8D1E8EA5E9199 /* HWHandshakeResultRecord.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HWHandshakeResultRecord.mm; sourceTree = "<group>"; };
 		70C455387B6026A8A84DD02D /* hello_world_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello_world_impl.cpp; sourceTree = "<group>"; };
+		70F15AD602BE36C1AE2B5476 /* HWHandshakeResultRecord+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "HWHandshakeResultRecord+Private.mm"; sourceTree = "<group>"; };
+		7A8195EB1F2A4E46984AC013 /* HWApiHandshake+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "HWApiHandshake+Private.mm"; sourceTree = "<group>"; };
 		807B3C32F2CD2DD6B0E49846 /* NativeHelloWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeHelloWorld.cpp; sourceTree = "<group>"; };
 		83F05D594EC1E8C7A1CCF331 /* support_lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = support_lib.xcodeproj; path = "build_ios/deps/djinni/support-lib/support_lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		93EF3C6F21A261CD73E92BF3 /* HWHelloWorld+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "HWHelloWorld+Private.mm"; sourceTree = "<group>"; };
@@ -106,14 +119,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		015A3436C71018CD4C802699 /* objc */ = {
-			isa = PBXGroup;
-			children = (
-				93EF3C6F21A261CD73E92BF3 /* HWHelloWorld+Private.mm */,
-			);
-			path = objc;
-			sourceTree = "<group>";
-		};
 		0C262977B5BD1DAC1DD7EC38 = {
 			isa = PBXGroup;
 			children = (
@@ -132,9 +137,10 @@
 			name = Projects;
 			sourceTree = "<group>";
 		};
-		55562500CAD3B7A79DBAD056 /* src/cpp */ = {
+		69A2C7747332676B43572F05 /* src/cpp */ = {
 			isa = PBXGroup;
 			children = (
+				18977E16908ED9505755AC4F /* api_handshake_impl.cpp */,
 				70C455387B6026A8A84DD02D /* hello_world_impl.cpp */,
 			);
 			path = src/cpp;
@@ -145,7 +151,7 @@
 			children = (
 				D49B016DDB4F79DFDEA40691 /* deps/djinni/support-lib/jni */,
 				9FA2DB762502A7A56BDA9B8D /* generated-src */,
-				55562500CAD3B7A79DBAD056 /* src/cpp */,
+				69A2C7747332676B43572F05 /* src/cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -153,8 +159,8 @@
 		9FA2DB762502A7A56BDA9B8D /* generated-src */ = {
 			isa = PBXGroup;
 			children = (
-				C04D998D4EF9B08A8F4DA7F0 /* jni */,
-				015A3436C71018CD4C802699 /* objc */,
+				D7BFA7B4E826684C98CF727A /* jni */,
+				C5F800BBEEAB5DC662C38903 /* objc */,
 			);
 			path = "generated-src";
 			sourceTree = "<group>";
@@ -168,14 +174,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C04D998D4EF9B08A8F4DA7F0 /* jni */ = {
-			isa = PBXGroup;
-			children = (
-				807B3C32F2CD2DD6B0E49846 /* NativeHelloWorld.cpp */,
-			);
-			path = jni;
-			sourceTree = "<group>";
-		};
 		C0C11722137A4B179ABB7533 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,12 +184,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C5F800BBEEAB5DC662C38903 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				7A8195EB1F2A4E46984AC013 /* HWApiHandshake+Private.mm */,
+				70F15AD602BE36C1AE2B5476 /* HWHandshakeResultRecord+Private.mm */,
+				461B31B9A7B8D1E8EA5E9199 /* HWHandshakeResultRecord.mm */,
+				93EF3C6F21A261CD73E92BF3 /* HWHelloWorld+Private.mm */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
 		D49B016DDB4F79DFDEA40691 /* deps/djinni/support-lib/jni */ = {
 			isa = PBXGroup;
 			children = (
 				13B25165D8F4AF2C6CEA4FDD /* djinni_main.cpp */,
 			);
 			path = "deps/djinni/support-lib/jni";
+			sourceTree = "<group>";
+		};
+		D7BFA7B4E826684C98CF727A /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				0272945CDAC1122F03365B7E /* NativeApiHandshake.cpp */,
+				37E8DD084CB06D2BEB617B53 /* NativeHandshakeResultRecord.cpp */,
+				807B3C32F2CD2DD6B0E49846 /* NativeHelloWorld.cpp */,
+			);
+			path = jni;
 			sourceTree = "<group>";
 		};
 		FC74AB431434A753C9A1AB2F /* Build */ = {
@@ -296,8 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C2B88DDF89C4D63316C7907 /* HWHelloWorld+Private.mm in Sources */,
-				D6690478B01D529DF7A3F654 /* hello_world_impl.cpp in Sources */,
+				B9CD2045E43C19E67DE2D94C /* HWApiHandshake+Private.mm in Sources */,
+				B721D6DD0A40B24C81160C95 /* HWHandshakeResultRecord+Private.mm in Sources */,
+				23F5BBE6FFACB05803E41B02 /* HWHandshakeResultRecord.mm in Sources */,
+				F86D243AECD03C281D113BB3 /* HWHelloWorld+Private.mm in Sources */,
+				8F1C5FDCB832EDB0569287E5 /* api_handshake_impl.cpp in Sources */,
+				BA6FFF2D7863C3105D65B43F /* hello_world_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FFCA28BDEEE6567A8B90CC /* djinni_main.cpp in Sources */,
-				E1A6CB1197B9B21717092AC2 /* NativeHelloWorld.cpp in Sources */,
-				E1B168C043D391C8B932D4E1 /* hello_world_impl.cpp in Sources */,
+				A7771D6690D091DCE11F09B1 /* NativeApiHandshake.cpp in Sources */,
+				BFADDCE2F1E579B4C80DBC4F /* NativeHandshakeResultRecord.cpp in Sources */,
+				2B0C23E3CF19831C3670CC2B /* NativeHelloWorld.cpp in Sources */,
+				A2928C1253F857B0497D213A /* api_handshake_impl.cpp in Sources */,
+				1756D3A4F43C547854145165 /* hello_world_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "HWHelloWorld.h"
+#import "HWApiHandshake.h"
+#import "HWHandshakeResultRecord.h"
 
 @interface ViewController ()
 
@@ -15,6 +17,7 @@
 
 @implementation ViewController {
     HWHelloWorld *_helloWorldInterface;
+    HWApiHandshake *_apiHandshakeInterface;
     UIButton *_button;
     UITextView *_textView;
 }
@@ -24,6 +27,12 @@
     
     // instantiate our library interface
     _helloWorldInterface = [HWHelloWorld create];
+    
+    _apiHandshakeInterface = [HWApiHandshake create];
+    
+    HWHandshakeResultRecord *record =  [_apiHandshakeInterface handshake:@"1" appVersion:@"2" osVersion:@"3" osType:@"4"];
+    
+    NSLog(@"%@", record.responseStatus);
     
     // create a button programatically for the demo
     _button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
