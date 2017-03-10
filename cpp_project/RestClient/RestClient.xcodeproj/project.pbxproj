@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68DD5C421E729AB600EF19FE /* instance_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68DD5C401E729AB600EF19FE /* instance_impl.cpp */; };
 		68FCA2A11E718F8500B380C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68FCA2A01E718F8500B380C0 /* main.cpp */; };
-		68FCA2AB1E71903B00B380C0 /* api_handshake_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68FCA2A91E71903B00B380C0 /* api_handshake_impl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,12 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		68DD5C401E729AB600EF19FE /* instance_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = instance_impl.cpp; path = ../../../src/cpp/instance_impl.cpp; sourceTree = "<group>"; };
+		68DD5C411E729AB600EF19FE /* instance_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = instance_impl.hpp; path = ../../../src/cpp/instance_impl.hpp; sourceTree = "<group>"; };
+		68DD5C441E729B8A00EF19FE /* instance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = instance.hpp; path = "../../../generated-src/cpp/instance.hpp"; sourceTree = "<group>"; };
+		68DD5C451E729B9300EF19FE /* handshake_record.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = handshake_record.hpp; path = "../../../generated-src/cpp/handshake_record.hpp"; sourceTree = "<group>"; };
 		68FCA29D1E718F8500B380C0 /* RestClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RestClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FCA2A01E718F8500B380C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		68FCA2A71E71901900B380C0 /* api_handshake.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = api_handshake.hpp; path = "../../../generated-src/cpp/api_handshake.hpp"; sourceTree = "<group>"; };
-		68FCA2A81E71901900B380C0 /* handshake_result_record.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = handshake_result_record.hpp; path = "../../../generated-src/cpp/handshake_result_record.hpp"; sourceTree = "<group>"; };
-		68FCA2A91E71903B00B380C0 /* api_handshake_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = api_handshake_impl.cpp; path = ../../../src/cpp/api_handshake_impl.cpp; sourceTree = "<group>"; };
-		68FCA2AA1E71903B00B380C0 /* api_handshake_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = api_handshake_impl.hpp; path = ../../../src/cpp/api_handshake_impl.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +62,10 @@
 		68FCA29F1E718F8500B380C0 /* RestClient */ = {
 			isa = PBXGroup;
 			children = (
-				68FCA2A71E71901900B380C0 /* api_handshake.hpp */,
-				68FCA2A81E71901900B380C0 /* handshake_result_record.hpp */,
-				68FCA2A91E71903B00B380C0 /* api_handshake_impl.cpp */,
-				68FCA2AA1E71903B00B380C0 /* api_handshake_impl.hpp */,
+				68DD5C451E729B9300EF19FE /* handshake_record.hpp */,
+				68DD5C441E729B8A00EF19FE /* instance.hpp */,
+				68DD5C401E729AB600EF19FE /* instance_impl.cpp */,
+				68DD5C411E729AB600EF19FE /* instance_impl.hpp */,
 				68FCA2A01E718F8500B380C0 /* main.cpp */,
 			);
 			path = RestClient;
@@ -128,7 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68FCA2AB1E71903B00B380C0 /* api_handshake_impl.cpp in Sources */,
+				68DD5C421E729AB600EF19FE /* instance_impl.cpp in Sources */,
 				68FCA2A11E718F8500B380C0 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +256,7 @@
 				68FCA2A61E718F8500B380C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

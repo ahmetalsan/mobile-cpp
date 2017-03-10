@@ -8,10 +8,10 @@
 
 namespace restclient {
 
-struct HandshakeResultRecord final {
+struct HandshakeRecord final {
     std::string responseStatus;
 
-    HandshakeResultRecord(std::string responseStatus_)
+    HandshakeRecord(std::string responseStatus_)
     : responseStatus(std::move(responseStatus_))
     {}
 };

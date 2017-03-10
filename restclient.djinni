@@ -1,8 +1,8 @@
-handshake_result_record = record {
+handshake_record = record {
 	responseStatus: string;
 }
 
-api_handshake = interface +c {
-	static create(): api_handshake;
-	handshake(udId: string, appVersion: string, osVersion: string, osType: string): handshake_result_record;
+instance = interface +c {
+	static create(): instance;
+	handshake(udId: string, appVersion: string, osVersion: string, osType: string): handshake_record;
 }

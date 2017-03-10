@@ -4,27 +4,27 @@
 #pragma once
 
 #include "djinni_support.hpp"
-#include "handshake_result_record.hpp"
+#include "handshake_record.hpp"
 
 namespace djinni_generated {
 
-class NativeHandshakeResultRecord final {
+class NativeHandshakeRecord final {
 public:
-    using CppType = ::restclient::HandshakeResultRecord;
+    using CppType = ::restclient::HandshakeRecord;
     using JniType = jobject;
 
-    using Boxed = NativeHandshakeResultRecord;
+    using Boxed = NativeHandshakeRecord;
 
-    ~NativeHandshakeResultRecord();
+    ~NativeHandshakeRecord();
 
     static CppType toCpp(JNIEnv* jniEnv, JniType j);
     static ::djinni::LocalRef<JniType> fromCpp(JNIEnv* jniEnv, const CppType& c);
 
 private:
-    NativeHandshakeResultRecord();
-    friend ::djinni::JniClass<NativeHandshakeResultRecord>;
+    NativeHandshakeRecord();
+    friend ::djinni::JniClass<NativeHandshakeRecord>;
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cortex/restclient/HandshakeResultRecord") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cortex/restclient/HandshakeRecord") };
     const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Ljava/lang/String;)V") };
     const jfieldID field_mResponseStatus { ::djinni::jniGetFieldID(clazz.get(), "mResponseStatus", "Ljava/lang/String;") };
 };

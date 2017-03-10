@@ -7,13 +7,14 @@
 //
 
 #include <iostream>
-#include "api_handshake_impl.hpp"
+#include "instance_impl.hpp"
+#include "handshake_record.hpp"
 
 int main(int argc, const char * argv[]) {
     
-    restclient::ApiHandshakeImpl rc = restclient::ApiHandshakeImpl();
+    restclient::InstanceImpl rc = restclient::InstanceImpl();
     
-    restclient::HandshakeResultRecord record = rc.handshake("", "", "", "");
+    restclient::HandshakeRecord record = rc.handshake("", "", "", "");
     
     std::cout << record.responseStatus << "\n";
     

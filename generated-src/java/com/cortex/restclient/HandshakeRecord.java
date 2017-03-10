@@ -3,12 +3,12 @@
 
 package com.cortex.restclient;
 
-public final class HandshakeResultRecord {
+public final class HandshakeRecord {
 
 
     /*package*/ final String mResponseStatus;
 
-    public HandshakeResultRecord(
+    public HandshakeRecord(
             String responseStatus) {
         this.mResponseStatus = responseStatus;
     }
@@ -19,7 +19,7 @@ public final class HandshakeResultRecord {
 
     @Override
     public String toString() {
-        return "HandshakeResultRecord{" +
+        return "HandshakeRecord{" +
                 "mResponseStatus=" + mResponseStatus +
         "}";
     }

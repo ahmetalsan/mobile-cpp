@@ -13,8 +13,8 @@
 		68DD5BDD1E71977200EF19FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DD5BDB1E71977200EF19FE /* Main.storyboard */; };
 		68DD5BDF1E71977200EF19FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DD5BDE1E71977200EF19FE /* Assets.xcassets */; };
 		68DD5BE21E71977200EF19FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DD5BE01E71977200EF19FE /* LaunchScreen.storyboard */; };
-		68DD5BED1E7197E800EF19FE /* libdjinni_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DD5BEB1E7197E800EF19FE /* libdjinni_objc.a */; };
-		68DD5BEE1E7197E800EF19FE /* librestclient_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DD5BEC1E7197E800EF19FE /* librestclient_objc.a */; };
+		68DD5C481E729FC100EF19FE /* libdjinni_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DD5C461E729FC100EF19FE /* libdjinni_objc.a */; };
+		68DD5C491E729FC100EF19FE /* librestclient_objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DD5C471E729FC100EF19FE /* librestclient_objc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		68DD5BDE1E71977200EF19FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68DD5BE11E71977200EF19FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68DD5BE31E71977200EF19FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68DD5BEB1E7197E800EF19FE /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../deps/djinni/support-lib/build/Debug-iphoneos/libdjinni_objc.a"; sourceTree = "<group>"; };
-		68DD5BEC1E7197E800EF19FE /* librestclient_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librestclient_objc.a; path = "../../build/Debug-iphoneos/librestclient_objc.a"; sourceTree = "<group>"; };
+		68DD5C461E729FC100EF19FE /* libdjinni_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdjinni_objc.a; path = "../../../../Library/Developer/Xcode/DerivedData/RestClient-etxmeursmvgryraihbnfysuihntu/Build/Products/Debug-iphonesimulator/libdjinni_objc.a"; sourceTree = "<group>"; };
+		68DD5C471E729FC100EF19FE /* librestclient_objc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librestclient_objc.a; path = "../../../../Library/Developer/Xcode/DerivedData/RestClient-etxmeursmvgryraihbnfysuihntu/Build/Products/Debug-iphonesimulator/librestclient_objc.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68DD5BED1E7197E800EF19FE /* libdjinni_objc.a in Frameworks */,
-				68DD5BEE1E7197E800EF19FE /* librestclient_objc.a in Frameworks */,
+				68DD5C481E729FC100EF19FE /* libdjinni_objc.a in Frameworks */,
+				68DD5C491E729FC100EF19FE /* librestclient_objc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +89,8 @@
 		68DD5BEA1E7197E700EF19FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68DD5BEB1E7197E800EF19FE /* libdjinni_objc.a */,
-				68DD5BEC1E7197E800EF19FE /* librestclient_objc.a */,
+				68DD5C461E729FC100EF19FE /* libdjinni_objc.a */,
+				68DD5C471E729FC100EF19FE /* librestclient_objc.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

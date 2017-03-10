@@ -5,12 +5,12 @@ package com.cortex.restclient;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public abstract class ApiHandshake {
-    public abstract HandshakeResultRecord handshake(String udId, String appVersion, String osVersion, String osType);
+public abstract class Instance {
+    public abstract HandshakeRecord handshake(String udId, String appVersion, String osVersion, String osType);
 
-    public static native ApiHandshake create();
+    public static native Instance create();
 
-    private static final class CppProxy extends ApiHandshake
+    private static final class CppProxy extends Instance
     {
         private final long nativeRef;
         private final AtomicBoolean destroyed = new AtomicBoolean(false);
@@ -34,11 +34,11 @@ public abstract class ApiHandshake {
         }
 
         @Override
-        public HandshakeResultRecord handshake(String udId, String appVersion, String osVersion, String osType)
+        public HandshakeRecord handshake(String udId, String appVersion, String osVersion, String osType)
         {
             assert !this.destroyed.get() : "trying to use a destroyed object";
             return native_handshake(this.nativeRef, udId, appVersion, osVersion, osType);
         }
-        private native HandshakeResultRecord native_handshake(long _nativeRef, String udId, String appVersion, String osVersion, String osType);
+        private native HandshakeRecord native_handshake(long _nativeRef, String udId, String appVersion, String osVersion, String osType);
     }
 }

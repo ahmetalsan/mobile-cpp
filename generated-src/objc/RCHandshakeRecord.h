@@ -3,9 +3,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RCHandshakeResultRecord : NSObject
+@interface RCHandshakeRecord : NSObject
 - (nonnull instancetype)initWithResponseStatus:(nonnull NSString *)responseStatus;
-+ (nonnull instancetype)handshakeResultRecordWithResponseStatus:(nonnull NSString *)responseStatus;
++ (nonnull instancetype)handshakeRecordWithResponseStatus:(nonnull NSString *)responseStatus;
 
 @property (nonatomic, readonly, nonnull) NSString * responseStatus;
 

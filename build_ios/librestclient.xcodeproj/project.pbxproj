@@ -22,15 +22,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0272A83181340B34E6533094 /* api_handshake_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14732AAA2F2A2572DE090F6 /* api_handshake_impl.cpp */; };
 		17288326158F9986EAE275DF /* libdjinni_jni.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C7CD37A5BECC987DD906B6 /* libdjinni_jni.a */; };
-		3EA9A9A1FC1B82811102C4F5 /* NativeApiHandshake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED3964617758B56550889 /* NativeApiHandshake.cpp */; };
-		3F5E0AC8AD90FC3044C7702C /* RCHandshakeResultRecord+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 586DFD160E2AA14A4975783E /* RCHandshakeResultRecord+Private.mm */; };
-		5E1AB2A41D8CCAD345A0E7ED /* NativeHandshakeResultRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADE9041F5432C7C1C0A1AAD8 /* NativeHandshakeResultRecord.cpp */; };
-		6F90BC06E09FC062437A3368 /* RCApiHandshake+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 555396800C21E43445BB4683 /* RCApiHandshake+Private.mm */; };
-		9BE09403A4DC3A46478B5AB4 /* RCHandshakeResultRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0DEA6EDC00B14CC30575F6EA /* RCHandshakeResultRecord.mm */; };
-		A330540DFA133C08DDA9789D /* api_handshake_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14732AAA2F2A2572DE090F6 /* api_handshake_impl.cpp */; };
+		4F3BE2D1DF3095F7A8CFDC05 /* instance_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F47C0A60CC5D7C7555F3084 /* instance_impl.cpp */; };
+		5D0A4613B706DA87912AB60A /* instance_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F47C0A60CC5D7C7555F3084 /* instance_impl.cpp */; };
+		5DFAE9EF0C0EA8A299DACB5D /* RCHandshakeRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBE03C4C08D4EE3C6C51E2C0 /* RCHandshakeRecord.mm */; };
+		8B1565F2015B764C9F47F394 /* RCInstance+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14963842D0508FAE301EBA48 /* RCInstance+Private.mm */; };
 		BA2FEA421DBC8119839129BD /* djinni_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05EC9B017BDAF97C3024DB58 /* djinni_main.cpp */; };
+		D23B8476B65BE5B86911E6A7 /* NativeHandshakeRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C702409E5AEF332D60A95041 /* NativeHandshakeRecord.cpp */; };
+		D3C1A562DD89A338F6059360 /* NativeInstance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F44B87661C465E54D78DE4 /* NativeInstance.cpp */; };
+		DA47421D1CEDBEF32F9E25AF /* RCHandshakeRecord+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FECB6E8895AF6400A241E1F /* RCHandshakeRecord+Private.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,17 +80,17 @@
 
 /* Begin PBXFileReference section */
 		05EC9B017BDAF97C3024DB58 /* djinni_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = djinni_main.cpp; sourceTree = "<group>"; };
-		0DEA6EDC00B14CC30575F6EA /* RCHandshakeResultRecord.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCHandshakeResultRecord.mm; sourceTree = "<group>"; };
+		07F44B87661C465E54D78DE4 /* NativeInstance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeInstance.cpp; sourceTree = "<group>"; };
 		116C97FD3603BA67D4CDF678 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = deps/djinni/common.gypi; sourceTree = "<group>"; };
-		555396800C21E43445BB4683 /* RCApiHandshake+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "RCApiHandshake+Private.mm"; sourceTree = "<group>"; };
-		586DFD160E2AA14A4975783E /* RCHandshakeResultRecord+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "RCHandshakeResultRecord+Private.mm"; sourceTree = "<group>"; };
+		14963842D0508FAE301EBA48 /* RCInstance+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "RCInstance+Private.mm"; sourceTree = "<group>"; };
 		6A58C4E8676E57BB462E85D0 /* librestclient.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = librestclient.gyp; sourceTree = "<group>"; };
-		7BEED3964617758B56550889 /* NativeApiHandshake.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeApiHandshake.cpp; sourceTree = "<group>"; };
+		8F47C0A60CC5D7C7555F3084 /* instance_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = instance_impl.cpp; sourceTree = "<group>"; };
+		8FECB6E8895AF6400A241E1F /* RCHandshakeRecord+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "RCHandshakeRecord+Private.mm"; sourceTree = "<group>"; };
 		96328F5A95CCF5C317BA41BC /* librestclient_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librestclient_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABED2EFE9AF0D3A21ADACA2F /* support_lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = support_lib.xcodeproj; path = "build_ios/deps/djinni/support-lib/support_lib.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		ADE9041F5432C7C1C0A1AAD8 /* NativeHandshakeResultRecord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeHandshakeResultRecord.cpp; sourceTree = "<group>"; };
-		F14732AAA2F2A2572DE090F6 /* api_handshake_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = api_handshake_impl.cpp; sourceTree = "<group>"; };
+		C702409E5AEF332D60A95041 /* NativeHandshakeRecord.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeHandshakeRecord.cpp; sourceTree = "<group>"; };
 		F620AEA1313C4F0698449995 /* librestclient_jni.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librestclient_jni.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE03C4C08D4EE3C6C51E2C0 /* RCHandshakeRecord.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCHandshakeRecord.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,19 +122,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		106AFF4339B5718783550DD7 /* jni */ = {
+		3AB320A7A8A19CC4B1522054 /* objc */ = {
 			isa = PBXGroup;
 			children = (
-				7BEED3964617758B56550889 /* NativeApiHandshake.cpp */,
-				ADE9041F5432C7C1C0A1AAD8 /* NativeHandshakeResultRecord.cpp */,
+				8FECB6E8895AF6400A241E1F /* RCHandshakeRecord+Private.mm */,
+				FBE03C4C08D4EE3C6C51E2C0 /* RCHandshakeRecord.mm */,
+				14963842D0508FAE301EBA48 /* RCInstance+Private.mm */,
 			);
-			path = jni;
+			path = objc;
 			sourceTree = "<group>";
 		};
-		3518AAB07721B58C2C876721 /* src/cpp */ = {
+		3BEEDB28B798283008B3CDAD /* src/cpp */ = {
 			isa = PBXGroup;
 			children = (
-				F14732AAA2F2A2572DE090F6 /* api_handshake_impl.cpp */,
+				8F47C0A60CC5D7C7555F3084 /* instance_impl.cpp */,
 			);
 			path = src/cpp;
 			sourceTree = "<group>";
@@ -142,8 +143,8 @@
 		4945D33AF675982B5106C792 /* generated-src */ = {
 			isa = PBXGroup;
 			children = (
-				106AFF4339B5718783550DD7 /* jni */,
-				DE8A50937A214EFEEBF235AC /* objc */,
+				685092AEC0AE7B6D10811FBB /* jni */,
+				3AB320A7A8A19CC4B1522054 /* objc */,
 			);
 			path = "generated-src";
 			sourceTree = "<group>";
@@ -157,12 +158,21 @@
 			name = Build;
 			sourceTree = "<group>";
 		};
+		685092AEC0AE7B6D10811FBB /* jni */ = {
+			isa = PBXGroup;
+			children = (
+				C702409E5AEF332D60A95041 /* NativeHandshakeRecord.cpp */,
+				07F44B87661C465E54D78DE4 /* NativeInstance.cpp */,
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
 		7275A5BDEF231A891B23639C /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				8487040B3F9932D223F8037F /* deps/djinni/support-lib/jni */,
 				4945D33AF675982B5106C792 /* generated-src */,
-				3518AAB07721B58C2C876721 /* src/cpp */,
+				3BEEDB28B798283008B3CDAD /* src/cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -192,16 +202,6 @@
 				96328F5A95CCF5C317BA41BC /* librestclient_objc.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DE8A50937A214EFEEBF235AC /* objc */ = {
-			isa = PBXGroup;
-			children = (
-				555396800C21E43445BB4683 /* RCApiHandshake+Private.mm */,
-				586DFD160E2AA14A4975783E /* RCHandshakeResultRecord+Private.mm */,
-				0DEA6EDC00B14CC30575F6EA /* RCHandshakeResultRecord.mm */,
-			);
-			path = objc;
 			sourceTree = "<group>";
 		};
 		E89153FA6E2C89F1A70E4B98 /* Projects */ = {
@@ -306,9 +306,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2FEA421DBC8119839129BD /* djinni_main.cpp in Sources */,
-				3EA9A9A1FC1B82811102C4F5 /* NativeApiHandshake.cpp in Sources */,
-				5E1AB2A41D8CCAD345A0E7ED /* NativeHandshakeResultRecord.cpp in Sources */,
-				0272A83181340B34E6533094 /* api_handshake_impl.cpp in Sources */,
+				D23B8476B65BE5B86911E6A7 /* NativeHandshakeRecord.cpp in Sources */,
+				D3C1A562DD89A338F6059360 /* NativeInstance.cpp in Sources */,
+				4F3BE2D1DF3095F7A8CFDC05 /* instance_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,10 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F90BC06E09FC062437A3368 /* RCApiHandshake+Private.mm in Sources */,
-				3F5E0AC8AD90FC3044C7702C /* RCHandshakeResultRecord+Private.mm in Sources */,
-				9BE09403A4DC3A46478B5AB4 /* RCHandshakeResultRecord.mm in Sources */,
-				A330540DFA133C08DDA9789D /* api_handshake_impl.cpp in Sources */,
+				DA47421D1CEDBEF32F9E25AF /* RCHandshakeRecord+Private.mm in Sources */,
+				5DFAE9EF0C0EA8A299DACB5D /* RCHandshakeRecord.mm in Sources */,
+				8B1565F2015B764C9F47F394 /* RCInstance+Private.mm in Sources */,
+				5D0A4613B706DA87912AB60A /* instance_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

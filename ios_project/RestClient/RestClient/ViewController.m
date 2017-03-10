@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "RCApiHandshake.h"
-#import "RCHandshakeResultRecord.h"
+#import "RCInstance.h"
 
 @interface ViewController ()
 
@@ -20,8 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    RCApiHandshake *api = [RCApiHandshake create];
-    RCHandshakeResultRecord *result = [api handshake:@"" appVersion:@"" osVersion:@"" osType:@""];
+    RCInstance *rc = [RCInstance create];
+    RCHandshakeRecord *result = [rc handshake:@"" appVersion:@"" osVersion:@"" osType:@""];
+    
     NSLog(@"%@", result.responseStatus);
 }
 
