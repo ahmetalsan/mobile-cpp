@@ -1,7 +1,7 @@
 #include "api_handshake_impl.hpp"
 #include <string>
  
-namespace helloworld {
+namespace restclient {
     
     std::shared_ptr<ApiHandshake> ApiHandshake::create() {
         return std::make_shared<ApiHandshakeImpl>();
@@ -11,9 +11,9 @@ namespace helloworld {
  
     }
     
-    helloworld::HandshakeResultRecord ApiHandshakeImpl::handshake(const std::string & udId, const std::string & appVersion, const std::string & osVersion, const std::string & osType) {
+    restclient::HandshakeResultRecord ApiHandshakeImpl::handshake(const std::string & udId, const std::string & appVersion, const std::string & osVersion, const std::string & osType) {
 
-        helloworld:HandshakeResultRecord record = helloworld::HandshakeResultRecord("OK");
+        restclient:HandshakeResultRecord record = restclient::HandshakeResultRecord("OK");
 
         return record;
 

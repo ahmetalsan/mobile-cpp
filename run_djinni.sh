@@ -4,11 +4,11 @@ base_dir=$(cd "`dirname "0"`" && pwd)
 cpp_out="$base_dir/generated-src/cpp"
 jni_out="$base_dir/generated-src/jni"
 objc_out="$base_dir/generated-src/objc"
-java_out="$base_dir/generated-src/java/com/mycompany/helloworld"
-java_package="com.mycompany.helloworld"
-namespace="helloworld"
-objc_prefix="HW"
-djinni_file="helloworld.djinni"
+java_out="$base_dir/generated-src/java/com/cortex/restclient"
+java_package="com.cortex.restclient"
+namespace="restclient"
+objc_prefix="RC"
+djinni_file="restclient.djinni"
  
 deps/djinni/src/run \
    --java-out $java_out \
