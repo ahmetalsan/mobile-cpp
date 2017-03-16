@@ -4,3 +4,9 @@
 [submodule "deps/gyp"]
 	path = deps/gyp
 	url = https://chromium.googlesource.com/external/gyp.git
+[submodule "deps/restclient-cpp"]
+	path = deps/restclient-cpp
+	url = https://github.com/mrtazz/restclient-cpp
+[submodule "deps/curl"]
+	path = deps/curl
+	url = https://github.com/curl/curl.git

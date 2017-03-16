@@ -8,7 +8,7 @@ ios: ./build_ios/librestclient.xcodeproj
            -scheme RestClient \
            -configuration 'Debug' \
            -sdk iphonesimulator
- 
+
 # we specify a root target for android to prevent all of the targets from spidering out
 GypAndroid.mk: librestclient.gyp ./deps/djinni/support-lib/support_lib.gyp restclient.djinni
 	sh ./run_djinni.sh
@@ -19,3 +19,6 @@ android: GypAndroid.mk
 	cd android_project/RestClient/ && ./gradlew app:assembleDebug
 	@echo "Apks produced at:"
 	@python deps/djinni/example/glob.py ./ '*.apk'
+
+clean:
+	rm -rf ./build_ios ./generated-src .*~ src/.*~	

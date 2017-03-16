@@ -13,7 +13,7 @@ namespace restclient {
     
     restclient::HandshakeRecord InstanceImpl::handshake(const std::string & udId, const std::string & appVersion, const std::string & osVersion, const std::string & osType) {
 
-        restclient:HandshakeRecord record = restclient::HandshakeRecord("acme");
+        restclient:HandshakeRecord record = restclient::HandshakeRecord("dummy response");
 
         return record;
 

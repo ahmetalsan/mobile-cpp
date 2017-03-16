@@ -24,7 +24,7 @@ private:
     NativeHandshakeRecord();
     friend ::djinni::JniClass<NativeHandshakeRecord>;
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/cortex/restclient/HandshakeRecord") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/company/restclient/HandshakeRecord") };
     const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Ljava/lang/String;)V") };
     const jfieldID field_mResponseStatus { ::djinni::jniGetFieldID(clazz.get(), "mResponseStatus", "Ljava/lang/String;") };
 };

@@ -7,12 +7,12 @@
 
 namespace djinni_generated {
 
-NativeInstance::NativeInstance() : ::djinni::JniInterface<::restclient::Instance, NativeInstance>("com/cortex/restclient/Instance$CppProxy") {}
+NativeInstance::NativeInstance() : ::djinni::JniInterface<::restclient::Instance, NativeInstance>("com/company/restclient/Instance$CppProxy") {}
 
 NativeInstance::~NativeInstance() = default;
 
 
-CJNIEXPORT void JNICALL Java_com_cortex_restclient_Instance_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+CJNIEXPORT void JNICALL Java_com_company_restclient_Instance_00024CppProxy_nativeDestroy(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
@@ -20,7 +20,7 @@ CJNIEXPORT void JNICALL Java_com_cortex_restclient_Instance_00024CppProxy_native
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
-CJNIEXPORT jobject JNICALL Java_com_cortex_restclient_Instance_create(JNIEnv* jniEnv, jobject /*this*/)
+CJNIEXPORT jobject JNICALL Java_com_company_restclient_Instance_create(JNIEnv* jniEnv, jobject /*this*/)
 {
     try {
         DJINNI_FUNCTION_PROLOGUE0(jniEnv);
@@ -29,7 +29,7 @@ CJNIEXPORT jobject JNICALL Java_com_cortex_restclient_Instance_create(JNIEnv* jn
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
 }
 
-CJNIEXPORT jobject JNICALL Java_com_cortex_restclient_Instance_00024CppProxy_native_1handshake(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_udId, jstring j_appVersion, jstring j_osVersion, jstring j_osType)
+CJNIEXPORT jobject JNICALL Java_com_company_restclient_Instance_00024CppProxy_native_1handshake(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef, jstring j_udId, jstring j_appVersion, jstring j_osVersion, jstring j_osType)
 {
     try {
         DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);

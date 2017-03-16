@@ -3,7 +3,7 @@
 //  RestClient
 //
 //  Created by Ahmet Alsan on 09/03/2017.
-//  Copyright © 2017 cortex. All rights reserved.
+//  Copyright © 2017. All rights reserved.
 //
 
 #import "AppDelegate.h"
